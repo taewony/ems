@@ -1,7 +1,13 @@
-functional & reactive domain modeling
-=====================================
+functional & reactive domain modeling for EMS
+=============================================
 
-## 1) EMS services: config, alarm & fault, performance, general, security, and tools
+## 1) EMS services
+- config
+- alarm & event
+- performance
+ - general
+ - security
+ - tools (CSL, CallTrace, SON, etc)
 
 ## 2) Config Management Servers
 - open/close

@@ -6,7 +6,7 @@ lazy val commonSettings = Seq(
     , Resolver.sonatypeRepo("snapshots")
     , "Bintray " at "https://dl.bintray.com/projectseptemberinc/maven"
   ),
-  scalaVersion := "2.11.8",
+  scalaVersion := "2.13.0",
   licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0")),
   addCompilerPlugin("com.milessabin" % "si2712fix-plugin" % "1.2.0" cross CrossVersion.full),
   addCompilerPlugin("org.spire-math" %% "kind-projector"  % "0.8.0"),
@@ -31,7 +31,7 @@ lazy val commonSettings = Seq(
 lazy val root = (project in file(".")).
   settings(commonSettings: _*).
   settings(
-    name := "frdomain",
+    name := "ems",
     scalacOptions ++= Seq(
       "-feature",
       "-unchecked",
@@ -40,4 +40,3 @@ lazy val root = (project in file(".")).
       "-deprecation"
     )
   )
-
